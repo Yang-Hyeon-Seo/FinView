@@ -2,5 +2,5 @@ from django.urls import path
 
 app_name='post'
 urlpatterns = [
-    
+    path("", views.index),
 ]
