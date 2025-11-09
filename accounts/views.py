@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import update_session_auth_hash
+from django.contrib import messages
+
 # Create your views here.
 def login(request):
     if request.method == 'POST':
@@ -51,3 +54,21 @@ def update(request):
         'form': CustomUserChangeForm(instance=request.user),
     }  #일단 이렇게
     return render(request, 'accounts/update.html', context)
+
+@login_required
+def change_password(request):
+    
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)
+            messages.success(request, '비밀번호가 성공적으로 변경되었습니다.')
+            return redirect('posts:index')
+    else:
+        form = PasswordChangeForm(request.user)
+    context = {
+        'form': form,
+    }
+    return render(request, 'accounts/change_password.html', context)
