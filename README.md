@@ -184,3 +184,17 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
     - 순서가 잘못 되었었고, 희림님께서 알려주신 덕분에 PR을 진행할 수 있게 되었다!
   - 코드를 작성하는 과정에서 협업으로 진행하다 보니까 처음에 어떻게 진행해야 할지 막막했었는데, 그래도 진행을 하다 보니까 어느정도 감을 잡을랑 말랑이라서 조금 더 도전해보면 좋겠다는 생각이 들었다
     - 처음에 merge를 진행할 때 충돌이 많이 났는데, 해결하려니까 너무 어렵고 막막해서 진짜 포기하고 싶었는데, 그래도 한 번 문제를 해결해 보니까 약간은 알 것 같다는 생각이 들었다!
+- docs/readme: 리드미 파일 수정
+
+## 5. 커밋 내역
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
