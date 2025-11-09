@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm, CustomUserChangeForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 def login(request):
@@ -40,3 +40,14 @@ def signup(request):
 def delete(request):
     request.user.delete()
     return redirect('accounts:login')
+
+@login_required
+def update(request):
+    if request.method == 'POST':
+        request.user.username = request.POST.get('username')
+        request.user.save()
+        return redirect('posts:index')
+    context={
+        'form': CustomUserChangeForm(instance=request.user),
+    }  #일단 이렇게
+    return render(request, 'accounts/update.html', context)

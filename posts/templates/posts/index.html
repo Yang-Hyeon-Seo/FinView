@@ -13,6 +13,21 @@
       {% csrf_token %}
       <input type='submit' value='로그아웃'>
     </form>
+    
+    {% comment %} <forms action="{% url "acconuts:update" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="회원정보수정">
+    </forms>
+    {% endcomment %}
+    <hr>
+    <a href="{% url "accounts:update" %}">회원정보수정</a>
+    {% comment %}
+
+    <forms action="" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="비밀번호변경">
+    </forms> {% endcomment %}
+    
 
     <form action='{% url "accounts:delete" %}' method='POST'>
       {% csrf_token %}
