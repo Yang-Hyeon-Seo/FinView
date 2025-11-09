@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>게시글 상세 페이지</h1>
+  <p>작성자: {{ article.user }}</p>
+  <p>글 번호: {{ article.pk }}</p>
+  <p>제목: {{ article.title }}</p>
+  <p>내용: {{ article.content }}</p>
+  <p>작성일: {{ article.created_at }}</p>
+  <p>수정일: {{ article.updated_at }}</p>
+
+  {% if request.user == article.user %}
+    <a href='{% url "posts:update" article.pk %}'>게시글 수정</a>
+  {% endif %}
+</body>
+</html>
