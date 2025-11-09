@@ -3,6 +3,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
 from .forms import CustomUserCreationForm
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 def login(request):
     if request.method == 'POST':
@@ -17,6 +18,7 @@ def login(request):
     }
     return render(request, 'accounts/login.html', context)
 
+@login_required
 def logout(request):
     auth_logout(request)
     return redirect('posts:index')
@@ -34,6 +36,7 @@ def signup(request):
     }
     return render(request, 'accounts/signup.html', context)
 
+@login_required
 def delete(request):
     request.user.delete()
     return redirect('accounts:login')
