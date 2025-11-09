@@ -56,8 +56,16 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 - feature/18-comment_create : F18 - 댓글 작성
 - feature/19-comment_delete : F19 - 댓글 삭제
 
-## 5. 코드 소개
+## 5. 커밋
+![commit-4](image4.png)
+![commit-3](image3.png)
+![commit-2](image2.png)
+![commit-1](image1.png)
+
+## 6. 코드 소개
+- 비밀번호 수정(현서)
+  - 코드 작성 및 수정 과정이 가장 어려웠음
+  - `
 
 
-
-## 6. 배운점 및 느낀점
+## 7. 배운점 및 느낀점
