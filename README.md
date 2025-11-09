@@ -61,6 +61,19 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 ![commit-3](image3.png)
 ![commit-2](image2.png)
 ![commit-1](image1.png)
+---
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+
 
 ## 6. 코드 소개
 - post/create
@@ -174,27 +187,14 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
     - 기술 블로그를 참고하여 하나씩 나눠 받을 수 있는 form을 주석으로 추가함 (나중에 해당 방법을 적용해보기 위함)
 
 ## 7. 배운점 및 느낀점
-- 현서
-  - 코드 작성을 위해 과거 강의 복습을 진행함
-    - 이 과정에서 내가 놓쳤던 부분을 다시 확인할 수 있었고
-    - 그 덕분에 지금까지 이해가 안되었던 부분을 이해할 수 있게 되었다!
-  - 깃 허브 이용이 어렵다!
-    - 깃 허브를 이용해 협업을 진행했는데, 계속 PR이 진행되지 않았다는 문제가 있었다
-    - commit을 작성한 후에 브랜치를 develop로 바꾸고 merge를 진행한 후에 push를 진행했기 때문이었다는 것을 알게 되었다
-    - 순서가 잘못 되었었고, 희림님께서 알려주신 덕분에 PR을 진행할 수 있게 되었다!
-  - 코드를 작성하는 과정에서 협업으로 진행하다 보니까 처음에 어떻게 진행해야 할지 막막했었는데, 그래도 진행을 하다 보니까 어느정도 감을 잡을랑 말랑이라서 조금 더 도전해보면 좋겠다는 생각이 들었다
-    - 처음에 merge를 진행할 때 충돌이 많이 났는데, 해결하려니까 너무 어렵고 막막해서 진짜 포기하고 싶었는데, 그래도 한 번 문제를 해결해 보니까 약간은 알 것 같다는 생각이 들었다!
+- 코드 작성을 위해 과거 강의 복습을 진행함
+  - 이 과정에서 내가 놓쳤던 부분을 다시 확인할 수 있었고
+  - 그 덕분에 지금까지 이해가 안되었던 부분을 이해할 수 있게 되었다!
+- 깃 허브 이용이 어렵다!
+  - 깃 허브를 이용해 협업을 진행했는데, 계속 PR이 진행되지 않았다는 문제가 있었다
+  - commit을 작성한 후에 브랜치를 develop로 바꾸고 merge를 진행한 후에 push를 진행했기 때문이었다는 것을 알게 되었다
+  - 순서가 잘못 되었었고, 희림님께서 알려주신 덕분에 PR을 진행할 수 있게 되었다!
+- 코드를 작성하는 과정에서 협업으로 진행하다 보니까 처음에 어떻게 진행해야 할지 막막했었는데, 그래도 진행을 하다 보니까 어느정도 감을 잡을랑 말랑이라서 조금 더 도전해보면 좋겠다는 생각이 들었다
+  - 처음에 merge를 진행할 때 충돌이 많이 났는데, 해결하려니까 너무 어렵고 막막해서 진짜 포기하고 싶었는데, 그래도 한 번 문제를 해결해 보니까 약간은 알 것 같다는 생각이 들었다!
 - docs/readme: 리드미 파일 수정
 
-## 5. 커밋 내역
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
-![alt text](image-9.png)
-![alt text](image-10.png)
