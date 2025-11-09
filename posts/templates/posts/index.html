@@ -22,6 +22,16 @@
     <a href='{% url "accounts:login" %}'>로그인</a>
     <a href='{% url "accounts:signup" %}'>회원가입</a>
   {% endif %}
+  <hr>
 
+  {% for article in articles %}
+  <p>작성자: {{ article.user }}</p>
+  <p>글 번호: {{ article.pk }}</p>
+  <a href='{% url "posts:detail" article.pk %}'>
+    <p>제목: {{ article.title }}</p>
+  </a>
+  <p>내용: {{ article.content }}</p>
+  <hr>
+  {% endfor %}
 </body>
 </html>
