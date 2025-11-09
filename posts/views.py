@@ -91,3 +91,10 @@ def comments_create(request, pk):
         'comment_form': comment_form,
     }
     return render(request, 'posts/detail.html', context)
+
+@login_required
+def commets_delete(request, article_pk, comment_pk):
+    comment = Comment.objects.get(pk=comment_pk)
+    if comment.user == request.user:
+        comment.delete()
+    return redirect('posts:detail', article_pk)

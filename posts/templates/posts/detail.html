@@ -24,9 +24,15 @@
   <hr>
   <h2>댓글</h2>
   {% for comment in comments %}
-  <p>작성자: {{ comment.user }}</p>
-  <p>내용: {{ comment.content }}</p>
-  <hr>
+    <p>작성자: {{ comment.user }}</p>
+    <p>내용: {{ comment.content }}</p>
+    {% if comment.user == request.user %}
+      <form action="{% url "posts:comments_delete" article.pk comment.pk%}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="댓글삭제">
+      </form>
+    {% endif %}
+    <hr>
   {% endfor %}
 
   <form action="{% url "posts:comments_create" article.pk %}" method="POST">
