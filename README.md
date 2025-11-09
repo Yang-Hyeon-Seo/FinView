@@ -49,3 +49,9 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 - feature/detail: F15 - 게시글 상세 조회
 - fearure/update: F16 - 게시글 수정
 - fix/authenticated: 인증된 사용자에 의한 접근 제한
+- feature/10-update : F10 - 회원 정보 수정
+- feature/12-change_password : F12 - 비밀번호 변경
+- feature/14-create : F14 - 게시글 작성
+- feature/17-delete : F17 - 게시글 삭제
+- feature/18-comment_create : F18 - 댓글 작성
+- feature/19-comment_delete : F19 - 댓글 삭제
