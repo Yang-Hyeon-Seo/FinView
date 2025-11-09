@@ -13,5 +13,9 @@
   <p>내용: {{ article.content }}</p>
   <p>작성일: {{ article.created_at }}</p>
   <p>수정일: {{ article.updated_at }}</p>
+
+  {% if request.user == article.user %}
+    <a href='{% url "posts:update" article.pk %}'>게시글 수정</a>
+  {% endif %}
 </body>
 </html>
