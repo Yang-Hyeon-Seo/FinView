@@ -37,7 +37,8 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 - 기능 : `feature/login` 이런식으로 이름 정하기
 
 ## 4. 브랜치 용도
-- remotes/origin/develop: 개발 중 병합 브랜치
+- master: 최종 프로젝트
+- develop: 개발 중 병합 브랜치
 - fearure/user-model: F02 - 모델 상속
 - feature/form-custom: F03 - 기본 폼 CUSTOM
 - feature/login: F07 - 로그인
