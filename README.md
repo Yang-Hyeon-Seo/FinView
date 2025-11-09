@@ -55,3 +55,9 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 - feature/17-delete : F17 - 게시글 삭제
 - feature/18-comment_create : F18 - 댓글 작성
 - feature/19-comment_delete : F19 - 댓글 삭제
+
+## 5. 코드 소개
+
+
+
+## 6. 배운점 및 느낀점
