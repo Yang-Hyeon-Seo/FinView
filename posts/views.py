@@ -10,7 +10,7 @@ def index(request):
 def new(request):
     return render(request, 'posts/new.html')
 
-# @login_required
+@login_required
 def create(request):
     # title = request.GET.get('title')
     # content = request.GET.get('content')
@@ -24,7 +24,7 @@ def create(request):
             article = form.save(commit=False)
             article.user = request.user
             article.save()
-            return redirect('articles:detail', article.pk)
+            return redirect('posts:index') #, article.pk)
     else:
         form = ArticleForm()
     context = {

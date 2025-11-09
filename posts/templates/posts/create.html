@@ -17,6 +17,16 @@
 
   <a href="">[back]</a> {% endcomment %}
 
-  <h1>작성완료</h1>
+  {% comment %} <h1>작성완료</h1> {% endcomment %}
+
+  <h1>Create</h1>
+  <form action="{% url "posts:create" %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+  </form>
+
+  <hr>
+  <a href="">[back]</a>
 </body>
 </html>
