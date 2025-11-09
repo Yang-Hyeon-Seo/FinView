@@ -47,8 +47,12 @@ def index(request):
 
 def detail(request, article_pk):
     article = Article.objects.get(pk=article_pk)
+    comment_form = CommentForm()
+    comments = article.comment_set.all()
     context = {
         'article': article,
+        'comment_form': comment_form,
+        'comments': comments,
     }
     return render(request, 'posts/detail.html', context)
 
@@ -70,3 +74,20 @@ def update(request, article_pk):
         'form': form,
     }
     return render(request, 'posts/update.html', context)
+
+@login_required
+def comments_create(request, pk):
+    article = Article.objects.get(pk=pk)
+    comment_form = CommentForm(request.POST)
+    if comment_form.is_valid():
+        comment = comment_form.save(commit=False)
+        comment.article = article
+        comment.user = request.user
+        comment.save()
+        return redirect('posts:detail', article.pk)
+    # else
+    context = {
+        'article': article,
+        'comment_form': comment_form,
+    }
+    return render(request, 'posts/detail.html', context)

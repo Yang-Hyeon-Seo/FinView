@@ -22,7 +22,18 @@
   </form>
   {% endif %}
   <hr>
-  
+  <h2>댓글</h2>
+  {% for comment in comments %}
+  <p>작성자: {{ comment.user }}</p>
+  <p>내용: {{ comment.content }}</p>
+  <hr>
+  {% endfor %}
+
+  <form action="{% url "posts:comments_create" article.pk %}" method="POST">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="댓글 작성">
+  </form>
   <a href="{% url "posts:index" %}">back</a> 
 </body>
 </html>
