@@ -6,8 +6,8 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 ## 1. 기술 스택
 
 - Python 3.11
-- Django 5.2.x
-- SQLite3 (개발 환경 기본 DB)
+- Django 5.2.8
+- SQLite3
 - 가상환경: venv
 
 ## 2. 주요 기능
