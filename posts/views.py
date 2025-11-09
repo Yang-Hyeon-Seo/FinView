@@ -32,7 +32,9 @@ def create(request):
 
 
 def delete(request, num):
-    pass
+    article = Article.objects.get(pk=num)
+    article.delete()
+    return redirect('posts:index')
 
 
 # Create your views here.

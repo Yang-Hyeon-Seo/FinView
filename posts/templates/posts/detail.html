@@ -16,6 +16,13 @@
 
   {% if request.user == article.user %}
     <a href='{% url "posts:update" article.pk %}'>게시글 수정</a>
+    <form action="{% url "posts:delete" article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="삭제">
+  </form>
   {% endif %}
+  <hr>
+  
+  <a href="{% url "posts:index" %}">back</a> 
 </body>
 </html>
