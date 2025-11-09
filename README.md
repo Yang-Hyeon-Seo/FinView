@@ -6,8 +6,8 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 ## 1. 기술 스택
 
 - Python 3.11
-- Django 5.2.x
-- SQLite3 (개발 환경 기본 DB)
+- Django 5.2.8
+- SQLite3
 - 가상환경: venv
 
 ## 2. 주요 기능
@@ -37,7 +37,8 @@ Django 기반 금융 커뮤니티 서비스 프로젝트
 - 기능 : `feature/login` 이런식으로 이름 정하기
 
 ## 4. 브랜치 용도
-- remotes/origin/develop: 개발 중 병합 브랜치
+- master: 최종 프로젝트
+- develop: 개발 중 병합 브랜치
 - fearure/user-model: F02 - 모델 상속
 - feature/form-custom: F03 - 기본 폼 CUSTOM
 - feature/login: F07 - 로그인
